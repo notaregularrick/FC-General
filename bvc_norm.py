@@ -299,7 +299,7 @@ def ejecutar_normalizacion(scanner_global, gestor_tasas_global):
 
 if __name__ == "__main__":
     print("🔧 Ejecución manual BVC...")
-    scanner = ScannerAutomatico(subcarpeta_datos="Ed_cuenta_Yolo_mar")
+    scanner = ScannerAutomatico(subcarpeta_datos="carpeta de origen") #poner el nombre de la carpeta de origen personalizada o borrar para que agarre la default     
     ruta_tasas = scanner.obtener_ruta_tasas()
     gestor = GestorTasas(ruta_tasas)
     ejecutar_normalizacion(scanner, gestor)
